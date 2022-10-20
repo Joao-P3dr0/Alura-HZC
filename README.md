@@ -1,3 +1,11 @@
+# Minha nota
+
+A parte de "Picos" ainda está sendo feita.
+
+
+
+
+a partir de "Guia de estilos" são notas do instrutor.
 # Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
