@@ -1,0 +1,8 @@
+@media screen and (min-width: 1440px) {
+    .menu-lateral {
+        position: static;
+        width: 15vw;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}

@@ -1,0 +1,79 @@
+
+.menu-lateral{
+    background-color: var(--menu-lateral);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: -100vw;
+    position: fixed;
+    transition: all ease-in-out .45s;
+    width: 75vw;
+}
+
+.menu-lateral__logo {
+    align-self: center;
+    padding:2.8rem 0;
+    width: 115px;
+}
+.menu-lateral__lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral__itens {
+    list-style: none;
+}
+
+.menu-lateral__links {
+    align-items: center;
+    color: var(--fonte-alternativa);
+    display: flex;
+    height: 64px;
+    padding-left: 16px;
+}
+/* Pseudo elementos dos links */
+.inicio::before{
+    content: "\e902" ;
+}
+.videos::before{
+    content: "\e90e" ;
+}
+.picos::before{
+    content: "\e909" ;
+}
+.integrantes::before{
+    content: "\e903" ;
+}
+.camisas::before{
+    content: "\e900" ;
+}
+.pinturas::before {
+    content: "\e90a" ;
+}
+/* Cor diferente no link q estiver */
+.ativo{
+    color: var(--fonte);
+    padding-left: 9px;
+    border-left: 7px solid;
+}
+/* ==================== */
+/* Faz o .menu-lateral aparecer */
+.ativo2{
+    left: 0;
+    transition: all ease-in-out .45s ;
+}
+/* ==================== */
+
+
+.menu-lateral__links::before {
+    font-size:24px ;
+    height: 24px;
+    padding-right: 24px;
+    width: 24px;
+}
+
+
+
+
+
+

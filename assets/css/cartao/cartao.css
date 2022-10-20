@@ -1,0 +1,153 @@
+.principal {
+    display: grid;
+    padding: 45px 16px;
+    gap: 16px;
+}
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.cartao__img--desktop {
+    display: none;
+}
+.cartao__img--mobile{
+    display: block;
+}
+
+.cartao {
+    background-color: var(--cartao);
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.cartao__vidsRecentes {
+    display: none;
+}
+.cartao__artes{
+    display: none;
+}
+
+
+.cartao__conteudo {
+    padding: 18px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+}
+
+.cartao__destaque {
+    font-size: 16px;
+    font-weight: 400;
+    grid-column: span 2;
+    
+}
+.cartao__titulo {
+    font-size: 24px;
+    font-weight: 700;
+    grid-column: span 2;
+    
+    
+}
+.cartao__perfil {
+    color: var(--fonte-alternativa);
+    font-size: 16px;
+    font-weight: 200;
+    grid-column: span 2;
+    
+}
+.cartao__info {
+    align-items: center;
+    color: var(--fonte-alternativa);
+    display: flex;
+    font-size: 16px;
+    
+}
+/* icones tempo,view,moeda */
+.cartao-tempo::before{
+    content: "\e90c";
+    margin-right: 8px;
+}
+.cartao-views::before{
+    content: "\e90f";
+    margin-right: 8px;
+}
+.cartao-moeda::before{
+    content: "\e905";
+    margin-right: 8px;
+}
+/*====================*/
+.cartao__botao {
+    align-items: center;
+    background-color: var(--botao);
+    border-radius: 10px;
+    display: flex;
+    font-size: 0.9rem;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+
+}
+
+.cartao__botao--play{
+    justify-self: flex-end;
+}
+.cartao__botao--play::before{
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--carrinho{
+    justify-self: flex-end;
+}
+.cartao__botao--carrinho::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartao__botao-destaque{
+    width: 100%;
+    grid-column: span 2;
+}
+
+.cartao__botao-destaque::before{
+    margin-right: 8px;
+}
+
+.cartao-picos {
+    width: auto;
+}
+.img__picos{
+    height: 500px;
+}
+
+/* SECAO VIDEOS */
+.secao-videos {
+    display: grid;
+    gap: 16px;
+}
+.secao-videos__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+/*=======================*/
+/* SECAO VISITADOS */
+.secao-visitados {
+    display: grid;
+    gap: 16px;
+}
+.secao-visitados__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+/*=======================*/
+/* SECAO Camisas */
+.secao-camisas {
+    display: grid;
+    gap: 16px;
+}
+.secao-camisas__titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}

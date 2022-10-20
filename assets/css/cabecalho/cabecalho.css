@@ -1,0 +1,37 @@
+.cabecalho{
+    align-items: center;
+    background-color: var(--cabecalho-mobile);
+    box-shadow: var(--sombras);
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* deixando o cabecalho fixo na tela */
+/* .fixo {
+    width: 100%;
+    height: 40px;
+    float: left;
+    z-index: 9999;
+    position: fixed;
+} */
+/* ========= */
+
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.cabecalho__logo {
+    width: 35px;
+}
+
+.cabecalho__perfil {
+    display: none;
+}
+
+.cabecalho__notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+    
+}
+

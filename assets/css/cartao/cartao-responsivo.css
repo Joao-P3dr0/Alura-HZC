@@ -1,0 +1,150 @@
+@media screen and (min-width: 1440px) {
+    .principal {
+         display: grid;
+         grid-template-areas:
+          "titulo-pagina titulo-pagina titulo-pagina titulo-pagina"
+          "destaque destaque destaque recentes"
+          "secao-videos secao-videos secao-videos secao-videos "
+          "novas-artes arte-principal arte-principal arte-principal"
+          "secao-camisas secao-camisas secao-camisas secao-camisas  ";
+         grid-template-columns: repeat(4, auto); 
+         grid-template-rows: auto auto;
+         grid-column: 2;
+         row-gap: 32px;
+        
+    }
+    .titulo-pagina {
+        grid-area: titulo-pagina;
+    }
+    .cartao__img--mobile{
+        display: none;
+    }
+    .cartao__img--desktop {
+        display: block;
+    }
+    .cartao__botao-destaque {
+        grid-column: auto;
+        padding: 6px 8px;
+    }
+    .cartao-destaque{
+        grid-area: destaque;
+    }
+
+    .cartao__vidsRecentes{
+        align-items: center;
+        align-self: flex-start;
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 300px;
+        padding: 16px;
+        row-gap: 24px;
+        box-sizing: border-box;
+        grid-area: recentes;
+
+    }
+    .cartao__titulo-recentes {
+        font-size: 1.2rem;
+        font-weight: 500;
+        grid-column: auto;
+    }
+    
+    .cartao__link {
+        justify-self: flex-end;
+        font-weight: 700;
+        color: var(--links);
+    } 
+    .cartao__lista {
+        display: grid;
+        gap: 6px;
+        grid-column: span 2;
+    }
+    .cartao__item{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+        padding: 8px 4px;
+    }
+    .cartao__thumb {
+        width: 32px;
+        grid-row: span 2;
+    }
+    .cartao--item__titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 700;
+        grid-column: 2;
+    }
+    .cartao--item__perfil{
+        font-size: 0.8rem;
+        grid-column: 2;
+    }
+
+    /* Secao Videos */
+    .secao-videos{
+        grid-area: secao-videos;
+        grid-template-areas:
+        "titulo-pagina titulo-pagina titulo-pagina titulo-pagina"
+        "video1 video2 video3 video4"
+        ;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(4 ,1fr);
+        column-gap: 16px;
+    }
+    .secao-videos__titulo {
+        grid-area: titulo-pagina;
+    }
+    .video-mais-visto1{
+        grid-area: video1;   
+    }
+    .video-mais-visto2{
+        grid-area: video2;
+    }
+    .video-mais-visto3{
+        grid-area: video3;
+    }
+    .video-mais-visto4{
+        grid-area: video4;
+    }
+    /* ================ */
+
+    .cartao__artes{
+        align-items: center;
+        align-self: flex-start;
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 300px;
+        padding: 16px;
+        row-gap: 24px;
+        box-sizing: border-box;
+        grid-area: novas-artes ;
+    }
+    .cartao__nova-arte{
+        grid-area:arte-principal ;
+    }
+    /*Secao Camisas*/
+    .secao-camisas{
+        grid-area: secao-camisas ;
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina titulo-pagina"
+        "camisa1 camisa2 camisa3 camisa4";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: repeat(4 ,1fr);
+        column-gap: 16px;
+    }
+    .secao-camisas__titulo {
+        grid-area: titulo-pagina;
+    }
+    .camisa-mais-recente1 {
+        grid-area: camisa1;
+    }
+    .camisa-mais-recente2{
+        grid-area: camisa2;
+    }
+    c.camisa-mais-recente3{
+        grid-area: camisa3;
+    }
+    .camisa-mais-recente4{
+        grid-area: camisa4;
+    }
+    
+}
